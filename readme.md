@@ -1,15 +1,15 @@
-#Tarea curso ROS
+# Tarea curso ROS
 Alejandro Ruiz Esparza Rodríguez
 
-##Robot PUMA560
+## Robot PUMA560
 
 Modelo URDF: puma560_pos.urdf
 
-###Ver modelo en Rviz
+### Ver modelo en Rviz
 
 roslaunch puma560_description mostrar.launch model:=puma560_pos.urdf gui:=true
 
-###Simulación en Gazebo
+### Simulación en Gazebo
 
 roslaunch puma560_description puma560_model.launch urdf_file:=puma560_pos.urdf
 roslaunch puma560_description puma560_pos_ctrl_spawner.launch
@@ -27,7 +27,7 @@ Los tópicos para publicar los mensajes de control de posición son:
 
 Todos los mensajes son del tipo: std_msgs/Float64
 
-###Función para controlar el robot
+### Función para controlar el robot
 
 La función está ubicada en la carpeta "scripts"
 
